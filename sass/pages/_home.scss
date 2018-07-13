@@ -1,0 +1,28 @@
+.section-about {
+    background-color: $color-white;
+    padding: 25rem;
+    margin-top: -14vh;
+    overflow: hidden;
+    // clip-path: polygon(0 20vh, 100% 0, 100% 80%, 0 100%);
+    transform: skewY(-5deg);
+    
+    & > * {
+        transform: skewY(5deg);
+    }
+}
+
+.section-skills {
+    padding: 20rem 0;
+    background-image: url(../../img/coding.jpg);
+    opacity: .8;
+    background-size: cover;
+    transform: skewY(-5deg);
+    margin-top: -14vh;
+
+
+    & > * {
+        transform: skewY(5deg);
+    }
+
+}
+
