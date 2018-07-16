@@ -1,3 +1,7 @@
+// .skills-header {
+// color: $color-white;
+// }
+
 .skills-box {
   background-color: rgba($color-white, 0.8);
   font-size: 1.5rem;
@@ -18,13 +22,8 @@
   &__icon {
     font-size: 6rem;
     margin-bottom: 0.5rem;
-    background-image: linear-gradient(
-      to right,
-      $color-primary-light,
-      $color-primary-dark
-    );
     -webkit-background-clip: text;
-    color: transparent;
+    color: $color-black;
 
     @include respond(tab-port) {
       margin: 0;
