@@ -28,6 +28,9 @@
 }
 .u-margin-bottom-large {
   margin-bottom: 8rem !important;
+  @include respond(tab-port) {
+    margin-bottom: 5rem;
+  }
 }
 .u-margin-bottom-xl {
   margin-bottom: 10rem !important;

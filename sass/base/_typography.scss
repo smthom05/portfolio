@@ -34,7 +34,7 @@ body {
     animation: moveInRight 2s ease-out;
 
     @include respond(phone) {
-      letter-spacing: 0.5rem;
+      letter-spacing: .5rem;
     }
   }
 }
