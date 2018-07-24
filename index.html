@@ -14,6 +14,30 @@
 
     <title>Scott Thomas - Full Stack Developer</title>
     <link rel="shortcut icon" href="./img/title-image.png">
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <!-- Email.js Scripts-->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_aZK3qK1S3PwyZ3lyWlzPd");
+        })();
+    </script>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                emailjs.sendForm('default_service', 'ContactMe', this);
+            });
+        }
+    </script>
+
+
 </head>
 
 <body>
@@ -217,7 +241,7 @@
                                 <ul>
                                     <li>Mobile-first app that allows users to track all of their sporting experiences.</li>
                                     <li>Built with Ionic Mobile Framework, Sass, Angular, TypeScript, JavaScript, MongoDB, Mongoose,
-                                    Express, Passport.js, Leaflet and Seat Geek APIs.</li>
+                                        Express, Passport.js, Leaflet and Seat Geek APIs.</li>
                                 </ul>
                             </div>
                         </div>
@@ -245,50 +269,33 @@
             <div class="row">
                 <div class="contact">
                     <div class="contact__form">
-                        <form action="#" class="form">
+                        <form action="#" class="form" id="contact-form" method="post">
                             <div class="u-margin-bottom-medium">
                                 <h2 class="heading-secondary">
                                     Get In Touch
                                 </h2>
                             </div>
                             <div class="form__group">
-                                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                <input type="text" class="form__input" placeholder="Full Name" name="name" id="name" required>
                                 <label for="name" class="form__label">Full Name</label>
                             </div>
                             <div class="form__group u-margin-bottom-small">
-                                <input type="email" class="form__input" placeholder="Email Address" id="email" required>
+                                <input type="email" class="form__input" placeholder="Email Address" name="email" id="email" required>
                                 <label for="email" class="form__label">Email Address</label>
                             </div>
                             <div class="form__group u-margin-bottom-small">
-
                                 <textarea placeholder="Message" name="message" id="message" cols="30" rows="10" required class="form__input"></textarea>
                                 <label for="message" class="form__label">Message</label>
                             </div>
                             <div class="form__group">
-                                <button class="btn btn--secondary">Contact Me &rarr;</button>
+                                <button class="btn btn--secondary" id="submit" type="submit" value="Send">Contact Me &rarr;</button>
                             </div>
                         </form>
 
                     </div>
                 </div>
-
-
-
-
             </div>
-
-
-
-
-
-
-
-
-
-
         </section>
-
-
     </main>
 
 
@@ -312,6 +319,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- Email Function JavaScript -->
+    <script src="./javascript/email.js"></script>
 
 </body>
 
