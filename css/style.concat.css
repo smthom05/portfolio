@@ -722,11 +722,17 @@ body {
     border-top-left-radius: 0.3rem;
     border-top-right-radius: 0.3rem; }
     .card__image--1 {
-      background-image: url(../img/food-truckr-3.jpg); }
+      background-image: url(../img/groovz.png); }
     .card__image--2 {
-      background-image: url(../img/alpacabag-2.jpg); }
+      background-image: url(../img/scrawl_main.jpg); }
     .card__image--3 {
       background-image: url(../img/stadium-tracker.jpg); }
+    .card__image--4 {
+      background-image: url(../img/food-truckr-3.jpg); }
+    .card__image--5 {
+      background-image: url(../img/alpacabag-2.jpg); }
+    .card__image--6 {
+      background-image: url(../img/little_shop.png); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 400;

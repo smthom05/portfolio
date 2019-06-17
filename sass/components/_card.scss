@@ -71,12 +71,12 @@
     border-top-right-radius: 0.3rem;
 
     &--1 {
-      background-image: 
+      background-image:
         // linear-gradient(
         //   to right bottom,
         //   $color-secondary-light,
         //   $color-secondary-dark
-        url(../img/food-truckr-3.jpg);
+        url(../img/groovz.png);
     }
 
     &--2 {
@@ -85,16 +85,42 @@
         //   to right bottom,
         //   $color-secondary-light,
         //   $color-secondary-dark
-         url(../img/alpacabag-2.jpg);
+         url(../img/scrawl_main.jpg);
     }
 
     &--3 {
-      background-image: 
+      background-image:
         // linear-gradient(
         //   to right bottom,
         //   $color-secondary-light,
         //   $color-secondary-dark
         url(../img/stadium-tracker.jpg);
+    }
+    &--4 {
+      background-image:
+        // linear-gradient(
+        //   to right bottom,
+        //   $color-secondary-light,
+        //   $color-secondary-dark
+        url(../img/food-truckr-3.jpg);
+    }
+
+    &--5 {
+      background-image:
+        //  linear-gradient(
+        //   to right bottom,
+        //   $color-secondary-light,
+        //   $color-secondary-dark
+         url(../img/alpacabag-2.jpg);
+    }
+
+    &--6 {
+      background-image:
+        // linear-gradient(
+        //   to right bottom,
+        //   $color-secondary-light,
+        //   $color-secondary-dark
+        url(../img/little_shop.png);
     }
   }
 
